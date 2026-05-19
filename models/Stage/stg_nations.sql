@@ -4,6 +4,6 @@ with nations as(
         n_regionkey as region_id,
         n_name as name,
         n_comment as comments
-        from SOURCEDB.MK_MALL.nations
+        from {{source('src','nations')}}
 )
 SELECT * from nations

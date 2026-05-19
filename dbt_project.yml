@@ -20,5 +20,15 @@ clean-targets:
 
 # Configuring models
 models:
-    # If your 'stg_regions.sql' is inside a folder named 'staging'
-    +materialized: table
+  my_new_project:
+
+    Stage:
+      +materialized: table
+
+    intermediate:
+      +materialized: table
+      +transient: false
+
+data_tests: 
+  +store_failures: true
+  +schema: failures
