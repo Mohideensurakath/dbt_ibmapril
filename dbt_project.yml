@@ -27,7 +27,7 @@ models:
 
     intermediate:
       +materialized: table
-      +transient: false
+      +schema: dbt_int
 
 data_tests: 
   +store_failures: true
