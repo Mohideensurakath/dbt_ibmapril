@@ -6,6 +6,7 @@ sources:
     schema: mk_mall
     tables:
       - name: regions
+        description: TABLE FOR REGIONAL INFORMATION
       - name: nations
       - name: customers
       - name: orders

@@ -8,3 +8,18 @@ models:
           - unique
           - not_null
           
+  - name: int_part_supps_statistics
+    tests:
+      - currency_conversion
+
+  - name: int_lineitem
+    tests:
+      - currency_conversion
+
+  - name: int_orders
+    tests:
+      - currency_conversion
+
+      
+      
+          

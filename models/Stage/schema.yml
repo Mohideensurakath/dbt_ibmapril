@@ -9,6 +9,7 @@ models:
           - not_null
 
       - name: region_id
+        description: FOREIGN KEY FOR REGIONS TABLE
         tests:
           - relationships:
               arguments:
@@ -18,6 +19,7 @@ models:
   - name: stg_regions
     columns:
       - name: name
+        description: NAME OF THE REGION
         tests:
           - accepted_values:
               arguments:
