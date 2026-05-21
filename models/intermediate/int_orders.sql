@@ -4,6 +4,7 @@
 {{ config(materialized='incremental',unique_key='order_id') }}
 
 SELECT
+    {{ dbt_utils.generate_surrogate_key(['order_id','customer_id']) }} as order_key,
     order_id,
     order_date,
     customer_id,
