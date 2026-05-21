@@ -1,7 +1,5 @@
-{{ config(materialized='view') }}
-
 with source as (
-select * from {{ source('src', 'orders') }}
+select * from {{ source('src', 'orders2') }}
 ),
 changed as (
 select 
@@ -15,7 +13,8 @@ o_totalprice as total_price,
 o_orderstatus as status_code,
 o_orderpriority as priority_code,
 o_shippriority as ship_priority,
-o_orderdate as order_date
+o_orderdate as order_date,
+upd_date as upd_date
 from source
 )
 select * from changed
