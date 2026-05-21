@@ -19,7 +19,3 @@ models:
   - name: int_orders
     tests:
       - currency_conversion
-
-      
-      
-          
