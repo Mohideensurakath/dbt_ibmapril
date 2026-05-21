@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: src
+    database: sourcedb
+    schema: mk_mall
+    tables:
+      - name: regions
+        description: TABLE FOR REGIONAL INFORMATION
+      - name: nations
+      - name: customers
+      - name: orders
+      - name: suppliers
+      - name: parts
+      - name: lineitems
+      - name: partsupps
